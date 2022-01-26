@@ -1,0 +1,24 @@
+{
+    "name": "read0more/post-css-module",
+    "description": "My first packagist project",
+    "type": "library",
+    "license": "GPLv3",
+    "autoload": {
+        "psr-4": {
+            "PostCSSModule\\": "src/PostCSSModule"
+        }
+    },
+    "authors": [
+        {
+            "name": "read0more",
+            "email": "read0more@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "9.5.x-dev"
+    }
+}
