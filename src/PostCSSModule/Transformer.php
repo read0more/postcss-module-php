@@ -2,7 +2,7 @@
 
 namespace PostCSSModule;
 
-class PostCSSModule
+class Transformer
 {
 
     /**

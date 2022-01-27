@@ -1,19 +1,21 @@
 <?php declare(strict_types=1);
+
+namespace PostCSSModule\Test;
 use PHPUnit\Framework\TestCase;
-use PostCssModule\PostCSSModule;
+use PostCSSModule\Transformer;
 
 final class PostCSSModuleTest extends TestCase
 {
-    private $postCSSModule;
+    private $transformer;
 
     protected function setUp(): void
     {
-        $this->postCSSModule = new PostCSSModule(__DIR__ . '/css', __DIR__ . '/json');
+        $this->transformer = new Transformer(__DIR__ . '/css', __DIR__ . '/json');
     }
 
     public function testGetTransformedCssInfo(): void
     {
-        $transformedCssInfo = $this->postCSSModule->getTransformedCssInfo('cssMock');
+        $transformedCssInfo = $this->transformer->getTransformedCssInfo('cssMock');
         $originalCss = file_get_contents(__DIR__ . '/css/cssMock.css');
         $styles = $transformedCssInfo->classNames;
 
