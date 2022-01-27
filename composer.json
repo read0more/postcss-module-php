@@ -2,7 +2,7 @@
     "name": "read0more/post-css-module",
     "description": "Get postCSS module classname from json",
     "type": "library",
-    "license": "GPLv3",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "PostCSSModule\\": "src/PostCSSModule"
